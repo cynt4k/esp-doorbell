@@ -1,0 +1,33 @@
+{
+  "name": "esp-doorbell",
+  "version": "1.0.0",
+  "description": "ESP doorbell backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cynt4k",
+  "license": "ISC",
+  "dependencies": {
+    "asterisk-ami-client": "^1.1.5",
+    "async-mqtt": "^1.0.1",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "jssip": "^3.2.11",
+    "lusca": "^1.6.1",
+    "morgan": "^1.9.0",
+    "mqtt": "^2.18.3",
+    "sip": "0.0.4",
+    "uuws": "^0.7.1"
+  },
+  "devDependencies": {
+    "@types/compression": "0.0.36",
+    "@types/dotenv": "^4.0.3",
+    "@types/express": "^4.16.0",
+    "@types/lusca": "^1.5.0",
+    "@types/morgan": "^1.7.35",
+    "@types/mqtt": "^2.5.0"
+  }
+}
