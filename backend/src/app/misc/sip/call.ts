@@ -4,11 +4,11 @@ import { IAsteriskResponse, ICall } from '../../types/asterisk';
 export namespace Calling {
     export let call = (): Promise<any> => new Promise((resolve, reject) => {
         let options: ICall = <ICall>{
-            channel: 'local/202',
-            callerid: 'Haustür',
+            channel: process.env.CALL_CHANNEL || 'local/200',
+            callerid: process.env.CALL_ID || 'Haustür',
             actionid: 123,
-            number: 300,
-            timeout: 8000
+            number: process.env.CALL_NUMBER || 300,
+            timeout: process.env.CALL_TIMEOUT || 8000
         };
 
         asterisk

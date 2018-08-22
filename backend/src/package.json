@@ -15,12 +15,9 @@
     "compression": "^1.7.3",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "jssip": "^3.2.11",
     "lusca": "^1.6.1",
     "morgan": "^1.9.0",
     "mqtt": "^2.18.3",
-    "sip": "0.0.4",
-    "uuws": "^0.7.1"
   },
   "devDependencies": {
     "@types/compression": "0.0.36",

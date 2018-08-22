@@ -46,3 +46,5 @@ export let initMqtt = (): Promise<any> => new Promise(async (resolve, reject) =>
     }
 
 });
+
+export { client, baseTopic }
