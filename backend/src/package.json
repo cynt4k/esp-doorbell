@@ -4,7 +4,11 @@
   "description": "ESP doorbell backend",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "tsc",
+    "watch": "tsc -w -p ./app",
+    "debug": "nodemon --watch ./dist --inspect=0.0.0.0:5858 --nolazy ./dist/server.js",
+    "docker-debug": "docker-compose up",
+    "start": "node ./dist/server.js"
   },
   "author": "cynt4k",
   "license": "ISC",
